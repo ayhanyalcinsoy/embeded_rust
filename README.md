@@ -1,4 +1,4 @@
-![Rust Logo](./images/rust_logo.png) ![Arduino Logo](./images/arduino_logo.png)
+![Rust Logo](./images/rust_logo.png)__________________________________________![Arduino Logo](./images/arduino_logo.png)
 # Rust ile Arduino Kodlama
   * Neden Rust?
   * Arduino Nedir?
@@ -117,5 +117,4 @@ Kendi programınızı çalıştırmak için, temel bir LED Yanıp Sönme program
 
 
 
-
-## Mikrodenetleyiciyi yanıp sönme için yapılandırma
+## Kod yükleme için Mikrodenetleyiciyi yapılandırma
