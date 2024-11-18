@@ -7,7 +7,7 @@
   * Mikrodenetleyiciyi yanıp sönme için yapılandırma
   * Diğer Arduino Projeleri
 
-## Neden Rust
+## Neden Rust?
 
 Gömülü sistemler teknolojisi onlarca yıldır yenilikten yoksundu. Yıldırım hızında, gömülü cihazları programlamak için tercih edilen dil uzun zamandır C/C++ olmuştur, ancak Rust daha da hızlı geliştirme desteği sağlar. Rust gömülü sistem geliştirme için mükemmel bir seçimdir çünkü: 
 
