@@ -135,8 +135,6 @@ Kodun ilk iki satırından, işletim sistemi olmayan gömülü bir proje olduğu
 
 Ardından, varsayılan pinin (_D13_) dijital çıkışını yükseğe ayarlamak için Arduino kartının pinlerine erişim sağlıyoruz. 
 
-Her Arduino programı void **setup()** ve **void loop()** içerir. Biz sadece kurulumdan geçtik; kodun diğer kısmı döngüyü gösteriyor.
-
 Döngüdeki **toggle** yöntemi LED'i açıp kapatmak için kullanılırken, **delay_ms** yöntemi döngüyü belirtilen milisaniye kadar geciktirmek için kullanılır.
 
 ## Kod yükleme için Mikrodenetleyiciyi yapılandırma
