@@ -135,7 +135,7 @@ Resmi Arduino IDE'sinde Arduino mikrodenetleyicisi ile çalışırken, programı
 
 Arduino kartınız USB üzerinden cihazınıza takılıysa, aşağıdaki görüntüdeki gibi Arduino kartına bağlı USB'nin adını görmelisiniz:
 
-![USB Arduino Board](file:///home/pisicik/Masaüstü/embeded_rust/images/usb-arduino-board.png)
+![USB Arduino Board](./images/usb-arduino-board.png)
 
 Daha sonra, bu betik ile ravedude için seri com portunu ayarlayacağız:
 
