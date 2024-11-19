@@ -77,6 +77,17 @@ AVR mikrodenetleyicileri ve diğer yaygın kartlarda Rust çalıştırmak için 
 
 `rustup toolchain install nightly`
 
+### Linux'ta 
+Pardus gibi bir Linux dağıtımı kullanıyorsanız, komut şöyledir: 
+
+`sudo apt install avr-libc gcc-avr pkg-config avrdude libudev-dev build-essential `
+
+Yukarıdaki kılavuzu takip ederken bir engelle karşılaşırsanız, burada tüm işletim sistemleri için bir kurulum kılavuzu vardır. Bu adımlardan herhangi birinden sonra, bir sonraki adım, mikrodenetleyici kartını kargoya karşı flaşlamak için ravedude aracını yüklemektir: 
+
+`cargo +stable install ravedude`
+
+Bu araç, kartı bulmakta, yazılan kodu karta aktarma  ve bağlantıları dinleme işlerini yerine getirir. Tek yapmanız gereken **cargo run** komutunu çalıştırmak.
+
 
 ## Avrdude ile yeni bir Arduino projesi oluşturma
 Yeni bir proje başlatmak cargo-generate sandığı ile daha basit hale getirilmiştir. Yeni bir proje oluşturmak için aşağıdaki komutları art arda çalıştırmanız yeterlidir:
@@ -118,3 +129,21 @@ Kendi programınızı çalıştırmak için, temel bir LED Yanıp Sönme program
 
 
 ## Kod yükleme için Mikrodenetleyiciyi yapılandırma
+Resmi Arduino IDE'sinde Arduino mikrodenetleyicisi ile çalışırken, programı C++ tabanlı olan Arduino'da yazmanız ve program kaynak dosyasını USB portu üzerinden karta yüklemeniz yeterlidir. Rust ile daha uzun ama benzer bir prosedür izleyeceğiz. Linux komutu ile makinenizdeki açık USB portlarını listeleyerek başlayın: 
+
+`lsusb`
+
+Arduino kartınız USB üzerinden cihazınıza takılıysa, aşağıdaki görüntüdeki gibi Arduino kartına bağlı USB'nin adını görmelisiniz:
+
+![USB Arduino Board](file:///home/pisicik/Masaüstü/embeded_rust/images/usb-arduino-board.png)
+
+Daha sonra, bu betik ile ravedude için seri com portunu ayarlayacağız:
+
+`export RAVEDUDE_PORT=/dev/ttyUSB0`
+
+Bu, ravedude'a Arduino'nun hangi porta bağlı olduğunu söyler. Aşağıdaki komutu çalıştırmak, programı Arduino'ya yükleyecektir:
+
+`cargo run`
+
+## Mikro denetleyici üzerindeki çıktı
+
