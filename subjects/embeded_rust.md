@@ -1,11 +1,4 @@
 ![Rust Logo](../images/rust_logo.png)__________________________________________![Arduino Logo](../images/arduino_logo.png)
-# Rust ile Arduino Kodlama
-  * Neden Rust?
-  * Arduino Nedir?
-  * Kurulum ve Ayarlar
-  * Avrdude ile yeni bir Arduino projesi oluşturma
-  * Mikrodenetleyiciyi yanıp sönme için yapılandırma
-  * Diğer Arduino Projeleri
 
 ## Neden Rust?
 
@@ -39,6 +32,9 @@ Daha fazla I/O pini, bellek veya çoklu seri iletişim gerektiren projeler için
 | EEPROM | 1 KB | 1 KB | 4 KB |
 | Çalışma Hızı | 16 MHz | 16 MHz | 16 MHz |
 | USB Bağlantısı | Standart USB-B | Mini USB-B | Standart USB-B |
+
+![Arduino UNO](../images/Arduino-UNO.png)
+Görsel: Arduino UNO
 
 Arduino ile gömülü sistem geliştirme için normal prosedür aşağıdaki adımları içerir:
 
