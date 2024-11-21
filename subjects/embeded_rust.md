@@ -154,3 +154,5 @@ Bu, ravedude'a Arduino'nun hangi porta bağlı olduğunu söyler. Aşağıdaki k
 
 Program mikrodenetleyiciye yüklendiğinde Arduino programlandığı gibi davranacaktır. Bu durumda kart üzerindeki LED ışıklar programda belirtilen zaman aralıklarına göre yanıp sönecektir:
 ![Blinking LED](../images/rust-arduino-uno-final-1.gif)
+
+`avr-objcopy -O ihex target/avr-atmega328p/debug/rust-x-arduino.elf target/avr-atmega328p/debug/rust-x-arduino.hex`
