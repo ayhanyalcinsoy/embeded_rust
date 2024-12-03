@@ -90,8 +90,6 @@ Daha fazla I/O pini, bellek veya çoklu seri iletişim gerektiren projeler için
 | Çalışma Hızı | 16 MHz | 16 MHz | 16 MHz |
 | USB Bağlantısı | Standart USB-B | Mini USB-B | Standart USB-B |
 
-![Arduino UNO](../images/Arduino-UNO.png)
-Görsel: Arduino UNO
 
 ### 1.5.Kalkanlar (shields)
 Kalkanlar, projelerin yeteneklerini artırmak için kart üzerine monte edilebilen donanım aygıtı olarak
@@ -151,8 +149,8 @@ AREF pini, 16 MHz'dir. kristal osilatör, GND pinler , Vin pini , voltaj regüla
 butonu.
 Arduino kartı aşağıda gösterilmiştir:
 
-![Arduino Kardı]()
-Görsel: Arduino kartı
+![Arduino UNO](../images/Arduino-UNO.png)
+Görsel: Arduino UNO
 
 ***Breadboard***
 Breadboard, plastikten yapılmış dikdörtgen şeklinde bir tahta olarak tanımlanır. Üzerinde LED, direnç vb.
