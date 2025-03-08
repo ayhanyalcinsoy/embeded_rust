@@ -164,6 +164,8 @@ The measurement is: 5h
 ```
 Fonksiyonu `value` değeri olarak `5` ve `unit_label` değeri olarak `'h'` ile çağırdığımız için, program çıktısı bu değerleri içerir.
 
+Şimdi **info** isimli bir fonksiyon yazalım ve **name** ve **age** parametreleri olsun. Bu fonksiyon çıktı olarak **Benim adım Hasan ve ben 45 yaşındayım.** yazdırsın.
+
 ## 2.4.2. Değişkenler
 
 Bir değeri veya karakteri daha sonra tekrardan kullanmak/değiştirmek için hafızada tutabilirsiniz. Bu değerler değişkenlerde tutulur. Hafızada tutacağınız değerin türüne göre değişken tanımlanması gerekir. Rust'ta değişkenler varsayılan olarak değişmezdir, yani değişkene bir değer verdiğimizde bu değer değişmez.
@@ -188,7 +190,6 @@ Aşağıdaki tabloda, Rust dilinde kullanılan değişken türlerini ve tutabile
 |f64     |64 bit    |Çift hassaiyetli ondalık sayılar barındırır                      |
 |bool    |true/false|doğru/yanlış değerini barındırır                                 |
 |char    |karakter  |karakter veya karakterler barındırır                             |
-
 
 Aşağıdaki görselde veri türlerine ait örnekler bulunmaktadır. Eğer tamsayı ve ondalık sayı türleri için boyut belirtilmez ise Rust, varsayılan olarak tamsayılar için `i32`, ondalık sayılar için ise `f64` değerlerini kabul eder. Örnekte de görüldüğü gibi Rust hem normal karakter türünü hem de unicode karakterleri desteklemektedir.
 
@@ -238,7 +239,7 @@ Bir anahtar sözcük olan `loop` Rust'a, ait olduğu kod bloğunu sonsuza dek ya
 
 Döngünün kullanım alanlarından biri, bir iş parçacığının işini tamamlayıp tamamlamadığını kontrol etmek gibi başarısız olabileceğini bildiğiniz bir işlemi yeniden denemektir. Ayrıca bu işlemin sonucunu döngüden kodunuzun geri kalanına aktarmanız gerekebilir. Bunu yapmak için, döngüyü durdurmak için kullandığınız `break` ifadesinden sonra döndürülmesini istediğiniz değeri ekleyebilirsiniz; bu değer, burada gösterildiği gibi kullanabilmeniz için döngü dışında döndürülecektir:
 
-![loop](../images/loop-2.png)
+![loop](../images/loop-3.png)
 
 Döngüden önce, `counter` adında bir değişken tanımlıyoruz ve `0` olarak başlatıyoruz. Ardından, döngüden dönen değeri tutmak için `result` adında bir değişken tanımlıyoruz. Döngünün her yinelemesinde, `counter` değişkenine `1` ekliyoruz ve ardından sayacın `10`'a eşit olup olmadığını kontrol ediyoruz. Eşit olduğunda, `counter * 2` değeriyle `break` anahtar sözcüğünü kullanırız. Döngüden sonra, değeri sonuca atayan ifadeyi sonlandırmak için noktalı virgül kullanırız. Son olarak, bu durumda `20` olan `result` değerini yazdırıyoruz.
 
