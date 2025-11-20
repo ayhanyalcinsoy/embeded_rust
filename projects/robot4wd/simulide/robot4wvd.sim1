@@ -114,4 +114,10 @@
 
 <item itemtype="Connector" uid="Connector-319" startpinid="SerialTerm-89-pin0" endpinid="Uno-2-0" pointList="176,48,112,48,112,56,68,56" />
 
+<item itemtype="Connector" uid="Connector-321" startpinid="SerialTerm-89-pin1" endpinid="Uno-2-1" pointList="176,64,104,64,104,48,68,48" />
+
+<item itemtype="Connector" uid="Connector-322" startpinid="Uno-2-10" endpinid="L293-33-12EN" pointList="68,-32,156,-32,156,-308,168,-308" />
+
+<item itemtype="Connector" uid="Connector-323" startpinid="Uno-2-11" endpinid="L293-33-34EN" pointList="68,-40,216,-40,216,-252" />
+
 </circuit>
