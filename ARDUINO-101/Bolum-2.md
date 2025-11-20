@@ -59,13 +59,13 @@ Aşağıdaki komut ile rustup araç zinciri olmadan (toolchain) sisteme kurulur.
 
 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain none -y`
 
-Daha sonra gecelik yayımlanan araç zinciri (toolchain) aşağıdaki komut ile sisteme kurulur.
-
-`rustup toolchain install nightly --allow-downgrade --profile minimal --component clippy`
-
 Kurulum tamamlandıktan sonra Bash **env** ortamının yeniden başlatılmasını isteyen bir uyarı görünecektir. Bash **env** ortamını yeniden başlatmak için aşağıdaki komutu kullanın:
 
 `exec bash`
+
+Daha sonra gecelik yayımlanan araç zinciri (toolchain) aşağıdaki komut ile sisteme kurulur.
+
+`rustup toolchain install nightly --allow-downgrade --profile minimal --component clippy`
 
 _rustup_ için Tab (Sekme) ile otomatik tamamlama özelliğini etkinleştirmek isterseniz aşağıdaki komutu kullanabilirsiniz:
 
@@ -162,6 +162,7 @@ $ cargo run
      Running `target/debug/functions`
 The measurement is: 5h
 ```
+
 Fonksiyonu `value` değeri olarak `5` ve `unit_label` değeri olarak `'h'` ile çağırdığımız için, program çıktısı bu değerleri içerir.
 
 Şimdi **info** isimli bir fonksiyon yazalım ve **name** ve **age** parametreleri olsun. Bu fonksiyon çıktı olarak **Benim adım Hasan ve ben 45 yaşındayım.** yazdırsın.
