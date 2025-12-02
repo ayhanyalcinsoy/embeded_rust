@@ -1,4 +1,4 @@
-robot4wd
+4WD Kollu Robot
 ========
 
 Rust project for the _Arduino Uno_.

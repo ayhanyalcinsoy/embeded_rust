@@ -24,10 +24,6 @@
 
 <item itemtype="SerialTerm" CircId="SerialTerm-89" mainComp="false" Show_id="false" Show_Val="false" Pos="200,56" rotation="0" hflip="1" vflip="1" label="SerialTerm-89" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
 
-<item itemtype="Node" CircId="Node-59" mainComp="false" Pos="104,-324" />
-
-<item itemtype="Node" CircId="Node-60" mainComp="false" Pos="92,-288" />
-
 <item itemtype="Node" CircId="Node-72" mainComp="false" Pos="288,-324" />
 
 <item itemtype="Node" CircId="Node-73" mainComp="false" Pos="368,-324" />
@@ -44,17 +40,9 @@
 
 <item itemtype="Node" CircId="Node-79" mainComp="false" Pos="-96,28" />
 
-<item itemtype="Connector" uid="Connector-213" startpinid="DcMotor-21-lPin" endpinid="Node-59-1" pointList="8,-252,8,-276,104,-276,104,-324" />
+<item itemtype="Node" CircId="Node-59" mainComp="false" Pos="104,-324" />
 
-<item itemtype="Connector" uid="Connector-215" startpinid="Node-59-2" endpinid="DcMotor-20-rPin" pointList="104,-324,88,-324" />
-
-<item itemtype="Connector" uid="Connector-216" startpinid="L293-33-4Y" endpinid="Node-59-0" pointList="216,-292,216,-368,104,-368,104,-324" />
-
-<item itemtype="Connector" uid="Connector-217" startpinid="DcMotor-21-rPin" endpinid="Node-60-1" pointList="88,-252,88,-288,92,-288" />
-
-<item itemtype="Connector" uid="Connector-218" startpinid="L293-33-3Y" endpinid="Node-60-0" pointList="216,-268,228,-268,228,-348,132,-348,132,-288,92,-288" />
-
-<item itemtype="Connector" uid="Connector-219" startpinid="Node-60-2" endpinid="DcMotor-20-lPin" pointList="92,-288,8,-288,8,-324" />
+<item itemtype="Node" CircId="Node-60" mainComp="false" Pos="92,-288" />
 
 <item itemtype="Connector" uid="Connector-264" startpinid="Node-72-1" endpinid="DcMotor-23-rPin" pointList="288,-324,288,-284,368,-284,368,-244" />
 
@@ -104,20 +92,32 @@
 
 <item itemtype="Connector" uid="Connector-300" startpinid="Node-79-2" endpinid="Node-77-0" pointList="-96,28,-96,-24" />
 
-<item itemtype="Connector" uid="Connector-301" startpinid="L293-33-1A" endpinid="Uno-2-2" pointList="168,-300,144,-300,144,-40,176,-40,176,40,68,40" />
-
-<item itemtype="Connector" uid="Connector-302" startpinid="Uno-2-4" endpinid="L293-33-2A" pointList="68,24,192,24,192,-56,152,-56,152,-260,168,-260" />
-
-<item itemtype="Connector" uid="Connector-303" startpinid="Uno-2-7" endpinid="L293-33-3A" pointList="68,0,232,0,232,-260,216,-260" />
-
-<item itemtype="Connector" uid="Connector-304" startpinid="L293-33-4A" endpinid="Uno-2-8" pointList="216,-300,248,-300,248,-16,68,-16" />
-
 <item itemtype="Connector" uid="Connector-319" startpinid="SerialTerm-89-pin0" endpinid="Uno-2-0" pointList="176,48,112,48,112,56,68,56" />
 
 <item itemtype="Connector" uid="Connector-321" startpinid="SerialTerm-89-pin1" endpinid="Uno-2-1" pointList="176,64,104,64,104,48,68,48" />
 
+<item itemtype="Connector" uid="Connector-302" startpinid="Uno-2-4" endpinid="L293-33-2A" pointList="68,24,192,24,192,-56,152,-56,152,-260,168,-260" />
+
+<item itemtype="Connector" uid="Connector-301" startpinid="L293-33-1A" endpinid="Uno-2-2" pointList="168,-300,144,-300,144,-40,176,-40,176,40,68,40" />
+
+<item itemtype="Connector" uid="Connector-304" startpinid="L293-33-4A" endpinid="Uno-2-8" pointList="216,-300,248,-300,248,-16,68,-16" />
+
+<item itemtype="Connector" uid="Connector-216" startpinid="L293-33-4Y" endpinid="Node-59-0" pointList="216,-292,216,-368,104,-368,104,-324" />
+
+<item itemtype="Connector" uid="Connector-215" startpinid="Node-59-2" endpinid="DcMotor-20-rPin" pointList="104,-324,88,-324" />
+
+<item itemtype="Connector" uid="Connector-213" startpinid="DcMotor-21-lPin" endpinid="Node-59-1" pointList="8,-252,8,-276,104,-276,104,-324" />
+
+<item itemtype="Connector" uid="Connector-219" startpinid="Node-60-2" endpinid="DcMotor-20-lPin" pointList="92,-288,8,-288,8,-324" />
+
+<item itemtype="Connector" uid="Connector-218" startpinid="L293-33-3Y" endpinid="Node-60-0" pointList="216,-268,228,-268,228,-348,132,-348,132,-288,92,-288" />
+
+<item itemtype="Connector" uid="Connector-217" startpinid="DcMotor-21-rPin" endpinid="Node-60-1" pointList="88,-252,88,-288,92,-288" />
+
+<item itemtype="Connector" uid="Connector-303" startpinid="Uno-2-7" endpinid="L293-33-3A" pointList="68,0,232,0,232,-260,216,-260" />
+
 <item itemtype="Connector" uid="Connector-322" startpinid="Uno-2-10" endpinid="L293-33-12EN" pointList="68,-32,156,-32,156,-308,168,-308" />
 
-<item itemtype="Connector" uid="Connector-323" startpinid="Uno-2-11" endpinid="L293-33-34EN" pointList="68,-40,216,-40,216,-252" />
+<item itemtype="Connector" uid="Connector-370" startpinid="Uno-2-11" endpinid="L293-33-34EN" pointList="68,-40,216,-40,216,-252" />
 
 </circuit>
