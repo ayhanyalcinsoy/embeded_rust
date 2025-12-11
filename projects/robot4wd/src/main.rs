@@ -101,19 +101,6 @@ fn main() -> ! {
                     ufmt::uwriteln!(&mut serial, "Hiz AZALT: {}/255\r", yeni_hiz).unwrap();
                     continue;
                 }
-                /*b'T' => {
-                    // TEST: PWM çıkışlarını test et
-                    ufmt::uwriteln!(&mut serial, "PWM Test Basliyor...\r").unwrap();
-                    for duty in (50..=250).step_by(50) {
-                        sol_pwm.set_duty(duty);
-                        sag_pwm.set_duty(duty);
-                        ufmt::uwriteln!(&mut serial, "Duty Cycle: {}/255\r", duty).unwrap();
-                        arduino_hal::delay_ms(1000);
-                    }
-                    sol_pwm.set_duty(127);
-                    sag_pwm.set_duty(127);
-                    continue;
-                }*/
                 _ => {
                     ufmt::uwriteln!(&mut serial, "Gecersiz komut: {}\r", c as char).unwrap();
                     continue;
